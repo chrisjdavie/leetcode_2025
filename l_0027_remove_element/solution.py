@@ -5,11 +5,9 @@ class Solution:
 
         count: int = 0
 
-        for i in range(len(nums)):
-            if nums[i] == val:
+        for this_num in nums:
+            if this_num != val:
+                nums[count] = this_num
                 count += 1
-            else:
-                i_rep = i - count
-                nums[i_rep] = nums[i]
 
-        return len(nums) - count
+        return count
