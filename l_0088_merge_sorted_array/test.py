@@ -1,6 +1,6 @@
 import pytest
 
-from merge_sorted_array.solution import Solution
+from l_0088_merge_sorted_array.solution import Solution
 
 
 @pytest.mark.parametrize(
