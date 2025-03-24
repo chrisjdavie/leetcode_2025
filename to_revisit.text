@@ -1,5 +1,9 @@
-l_0088_merge_sorted_array, 1
+l_0088_merge_sorted_array, 1, 2025/03/23
 - didn't get solution first time
 - errors in coding
 - - typos
 - - not thinking correctly about exit conditions
+
+l_0080_remov_duplicated_from_sorted_array_ii, 1, 2025/03/24
+- got order of operations wrong
+- did the wrong thing with range

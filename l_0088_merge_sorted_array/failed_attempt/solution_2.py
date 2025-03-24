@@ -16,9 +16,11 @@ class Solution:
         for i in range(m + n):
             if nums1[j] < nums2[k]:
                 nums1[i], nums1[j] = nums1[j], nums1[i]
+                
                 j += 1
             else:
                 nums1[s] = nums1[i]
+                j = s
                 s += 1
                 nums1[i] = nums2[k]
                 k += 1
