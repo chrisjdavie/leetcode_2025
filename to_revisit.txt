@@ -20,3 +20,9 @@ l_0169_majority_element
 - didn't go for the obvious solutions
 - didn't go for the solution I knew, nerd sniped myself
 - didn't know Moore's voting algorithm (fine, but know now)
+
+l_0150_rotate_array
+2025/04/26
+- didn't go for obvious solution
+- took me a while to understand the in place solution
+- got some details in the place solution wrong
