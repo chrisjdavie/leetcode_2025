@@ -1,0 +1,1 @@
+this algorithm - "Kadane's Algorithm is a dynamic programming technique used to find the maximum subarray sum in an array of numbers."
