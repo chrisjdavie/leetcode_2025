@@ -1,6 +1,6 @@
 import pytest
 
-from solution import Solution
+from l_0121_best_time_to_buy_and_sell_stock.solution import Solution
 
 @pytest.mark.parametrize(
     "prices,expected_profit",

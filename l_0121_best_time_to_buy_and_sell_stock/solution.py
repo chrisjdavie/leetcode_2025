@@ -9,7 +9,7 @@ class Solution:
         for this_price in prices:
             if this_price < lowest:
                 lowest = this_price
-            if (diff := this_price - lowest) > largest_profit:
+            elif (diff := this_price - lowest) > largest_profit:
                 largest_profit = diff
 
         return largest_profit
