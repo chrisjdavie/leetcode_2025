@@ -1,3 +1,10 @@
+"""
+Optimized based on others solutions in the forums, faster - doesn't use
+max, slightly fewer operations probably
+
+I'd say mine is clearer
+"""
+
 from typing import List
 
 
@@ -6,10 +13,11 @@ class Solution:
 
         max_dist: int = 0
 
-        for i, dist in enumerate(nums):
-            if max_dist < i:
+        for dist in nums:
+            if max_dist < 0:
                 return False
-
-            max_dist = max((max_dist, i + dist))
+            if dist > max_dist:
+                max_dist = dist
+            max_dist -= 1
 
         return True
