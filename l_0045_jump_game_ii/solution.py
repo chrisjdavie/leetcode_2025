@@ -13,7 +13,6 @@ class Solution:
             if dist >= current_furthest:
                 jump_count += 1
                 current_furthest = next_furthest
-            print(dist, jump, current_furthest, next_furthest, jump_count)
 
         return jump_count
     
