@@ -1,3 +1,15 @@
+"""
+Optimisation attempt - the slice operation duplicates array, uses 
+a lot of memory. This uses less.
+
+So this is faster than using the walrus, I guess maybe writing
+to a variable each loop is expensive compared to this? But it's
+all O(N), and leetcode says this is higher memory useage, so it'd
+be interesting to see what the test cases are.
+
+I'm happy I can recreate behaviours, so onto the next
+"""
+
 from typing import List
 
 class Solution:
@@ -6,7 +18,7 @@ class Solution:
         cuml_profit: int = 0
 
         for i in range(len(prices) - 1):
-            if (delta := prices[i+1] - prices[i]) > 0:
-                cuml_profit += delta
+            if prices[i+1] > prices[i]:
+                cuml_profit += prices[i+1] - prices[i]
 
         return cuml_profit

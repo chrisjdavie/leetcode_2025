@@ -1,3 +1,13 @@
+"""
+Optimisation attempt - the slice operation duplicates array, uses 
+a lot of memory. This uses less. But it's slower than slicing,
+which wasn't expected
+
+(according to leetcode statistics)
+
+looking at the fastest code, it 
+"""
+
 from typing import List
 
 class Solution:

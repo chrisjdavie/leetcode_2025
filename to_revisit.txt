@@ -26,3 +26,8 @@ l_0150_rotate_array
 - didn't go for obvious solution
 - took me a while to understand the in place solution
 - got some details in the place solution wrong
+
+l_0055_jump_game
+2025/04/27
+- basically everything
+- didn't read the instructions carefully, and it all went wrong
