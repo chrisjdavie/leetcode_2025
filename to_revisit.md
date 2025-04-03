@@ -16,11 +16,8 @@
 2025/04/03
 - solved it correctly
 
-----------------
 
-### To revisit
-
-#### l_0080_remov_duplicated_from_sorted_array_ii - x
+#### l_0080_remov_duplicated_from_sorted_array_ii
 2025/03/24
 - got order of operations wrong
 - did the wrong thing with range
@@ -29,6 +26,11 @@
 2025/04/03
 - solved it correctly
 - different way of thinking about it using pointers, so should try that too
+- implemented pointer approach. During optimisation, made an error, but probably won't count that for revisiting
+
+----------------
+
+### To revisit
 
 #### l_0169_majority_element
 2025/04/24
