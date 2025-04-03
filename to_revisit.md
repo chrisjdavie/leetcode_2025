@@ -8,7 +8,7 @@
 - - typos
 - - not thinking correctly about exit conditions
 
-2025/04/24
+2025/03/24
 - although I got it right before running it, 2 mistakes during writing
 - - got an equality the wrong way round
 - - forgot to decrement the indicies
@@ -25,6 +25,10 @@
 - got order of operations wrong
 - did the wrong thing with range
 - solution can be much more elegant
+
+2025/04/03
+- solved it correctly
+- different way of thinking about it using pointers, so should try that too
 
 #### l_0169_majority_element
 2025/04/24
