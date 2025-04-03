@@ -1,20 +1,21 @@
 from typing import List
 
+
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
         """
+        end_nums1: int = m - 1
+        end_nums2: int = n - 1
 
-        nums1_end: int = m - 1
-        nums2_end: int = n - 1
-
-        for i in range(m + n - 1, -1, -1):
-            if nums2_end < 0:
+        for end_merged in range(len(nums1) - 1, -1, -1):
+            if end_nums2 < 0:
                 break
-            if nums1_end < 0 or nums1[nums1_end] < nums2[nums2_end]:
-                nums1[i] = nums2[nums2_end]
-                nums2_end -= 1
+
+            if end_nums1 < 0 or nums1[end_nums1] < nums2[end_nums2]:
+                nums1[end_merged] = nums2[end_nums2]
+                end_nums2 -= 1
             else:
-                nums1[i] = nums1[nums1_end]
-                nums1_end -= 1
+                nums1[end_merged] = nums1[end_nums1]
+                end_nums1 -= 1

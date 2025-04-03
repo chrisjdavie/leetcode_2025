@@ -1,8 +1,10 @@
-l_0080_remov_duplicated_from_sorted_array_ii
+l_0080_remov_duplicated_from_sorted_array_ii - x
 2025/03/24
 - got order of operations wrong
 - did the wrong thing with range
 - solution can be much more elegant
+2025/04/03
+- solved it correctly
 
 l_0088_merge_sorted_array
 2025/03/23
