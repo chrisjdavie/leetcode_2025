@@ -40,3 +40,7 @@ l_0274_h_index
 2025/04/27
 - got the O(1) memory and O(NlogN) time solution, but missed the
 hashmap solution that is O(N) time and O(N) memory
+
+l_0274_h_index
+2025/05/03
+- got the solution fast, but really screwed up coding it well
