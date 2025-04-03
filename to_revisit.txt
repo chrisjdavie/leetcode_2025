@@ -31,3 +31,12 @@ l_0055_jump_game
 2025/04/27
 - basically everything
 - didn't read the instructions carefully, and it all went wrong
+
+l_0055_jump_game_ii
+2025/04/27
+- didn't twig the obvious algorithm
+
+l_0274_h_index
+2025/04/27
+- got the O(1) memory and O(NlogN) time solution, but missed the
+hashmap solution that is O(N) time and O(N) memory
