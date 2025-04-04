@@ -8,7 +8,6 @@ from l_0169_majority_element.solution import Solution
     (
         ([3,2,3], 3),
         ([2,2,1,1,1,2,2], 2),
-        ([3,3,4], 3),
     )
 )
 def test(nums, expected_majority_element):

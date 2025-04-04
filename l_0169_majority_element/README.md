@@ -1,3 +1,5 @@
+https://leetcode.com/problems/majority-element/
+
 ## 169. Majority Element
 
 Given an array `nums` of size `n`, return the majority element.

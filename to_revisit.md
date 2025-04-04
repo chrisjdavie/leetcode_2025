@@ -38,6 +38,10 @@
 - didn't go for the solution I knew, nerd sniped myself
 - didn't know Moore's voting algorithm (fine, but know now)
 
+2025/05/04
+- forgot return type of `<list>.sort()` is `None` (I mean, of course it is but...)
+- hashmap solution, got the break condition wrong, twice
+
 #### l_0150_rotate_array
 2025/04/26
 - didn't go for obvious solution
