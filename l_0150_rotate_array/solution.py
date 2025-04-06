@@ -1,5 +1,5 @@
 """
-Solution from the forums - in place, so O(1) ish memory, but 
+Using swaps and a pivot
 """
 from typing import List
 
@@ -10,13 +10,15 @@ class Solution:
         """
         k = k%len(nums)
 
-        # reverse first half
-        swaps: list[tuple[int]] = [
-            (0, len(nums) - k - 1),
-            (len(nums) - k, len(nums) - 1),
-            (0, len(nums) - 1)
-        ]
+        for i_lhs in range(len(nums)//2):
+            i_rhs: int = len(nums) - i_lhs - 1
+            nums[i_lhs], nums[i_rhs] = nums[i_rhs], nums[i_lhs]
 
-        for i_start, i_end in swaps:
-            for di in range(0, (i_end + 1 - i_start)//2):
-                nums[i_start + di], nums[i_end - di] = nums[i_end - di], nums[i_start + di]
+        for i_lhs in range(k//2):
+            i_rhs: int = k - i_lhs - 1
+            nums[i_lhs], nums[i_rhs] = nums[i_rhs], nums[i_lhs]
+
+        for di in range((len(nums) - k)//2):
+            i_lhs: int = k + di
+            i_rhs: int = len(nums) - di - 1
+            nums[i_lhs], nums[i_rhs] = nums[i_rhs], nums[i_lhs]
