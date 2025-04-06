@@ -28,6 +28,15 @@
 - different way of thinking about it using pointers, so should try that too
 - implemented pointer approach. During optimisation, made an error, but probably won't count that for revisiting
 
+
+#### l_0055_jump_game
+2025/03/27
+- basically everything
+- didn't read the instructions carefully, and it all went wrong
+
+2025/04/06
+- solved it correctly
+
 ----------------
 
 ### To revisit
@@ -50,11 +59,6 @@
 
 2025/04/06
 - got most of the above, fluffed some of the coding
-
-#### l_0055_jump_game
-2025/04/27
-- basically everything
-- didn't read the instructions carefully, and it all went wrong
 
 #### l_0055_jump_game_ii
 2025/04/27

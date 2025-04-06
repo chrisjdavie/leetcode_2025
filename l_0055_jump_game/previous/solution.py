@@ -11,12 +11,13 @@ from typing import List
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
 
-        ind_furthest: int = 0
+        max_dist: int = 0
 
-        for i, n in enumerate(nums[:-1]):
-            if i + n > ind_furthest:
-                ind_furthest = i + n
-            if ind_furthest <= i:
+        for dist in nums:
+            if max_dist < 0:
                 return False
+            if dist > max_dist:
+                max_dist = dist
+            max_dist -= 1
 
         return True
