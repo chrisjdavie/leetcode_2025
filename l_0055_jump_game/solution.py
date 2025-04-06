@@ -1,12 +1,7 @@
 """
-Optimized based on others solutions in the forums, faster - doesn't use
-max, slightly fewer operations probably
-
-I'd say mine is clearer
+Simple solution
 """
-
 from typing import List
-
 
 class Solution:
     def canJump(self, nums: List[int]) -> bool:

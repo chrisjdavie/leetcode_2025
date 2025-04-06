@@ -61,13 +61,16 @@
 - got most of the above, fluffed some of the coding
 
 #### l_0055_jump_game_ii
-2025/04/27
+2025/03/27
 - didn't twig the obvious algorithm
 
+2025/03/06
+- didn't twig the obvious algorithm, again...
+
 #### l_0274_h_index
-2025/04/27
+2025/03/27
 - got the O(1) memory and O(NlogN) time solution, but missed the
 hashmap solution that is O(N) time and O(N) memory
 
-2025/05/03
+2025/04/03
 - got the solution fast, but really screwed up coding it well
