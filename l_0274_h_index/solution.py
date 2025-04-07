@@ -1,26 +1,26 @@
+"""
+O(N), but slow as Counters are slower than lists initialised to
+zero in this case
+"""
+from collections import Counter
 from typing import List
 
 class Solution:
     def hIndex(self, citations: List[int]) -> int:
 
-        n: int = len(citations)
-
-        cit_count: list[int] = [0 for _ in range(n + 1)]
+        binned_citations: Counter = Counter()
 
         for cit in citations:
-            if cit > n:
-                cit_count[n] += 1
+            if cit >= len(citations):
+                binned_citations[len(citations)] += 1
             else:
-                cit_count[cit] += 1
-
-        print(cit_count)
+                binned_citations[cit] += 1
 
         running_total: int = 0
 
-        for cand_h_index in range(n, -1, -1):
-            running_total += cit_count[cand_h_index]
+        for cand_h_index in range(len(citations), -1, -1):
+            running_total += binned_citations[cand_h_index]
             if running_total >= cand_h_index:
                 break
-        
+
         return cand_h_index
-    

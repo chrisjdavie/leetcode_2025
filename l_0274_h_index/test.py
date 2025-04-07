@@ -11,6 +11,7 @@ from l_0274_h_index.solution import Solution
         ([5,5,5,5], 4),
         ([3,3,3], 3),
         ([3,3,2], 2),
+        ([0], 0),
     )
 )
 def test(citations, expected_h_index):
