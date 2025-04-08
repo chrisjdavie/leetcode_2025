@@ -1,6 +1,8 @@
 """
 O(N), but slow as Counters are slower than lists initialised to
 zero in this case
+
+Optimised it for the first try, this is to correct mistakes
 """
 from collections import Counter
 from typing import List

@@ -51,6 +51,9 @@
 - forgot return type of `<list>.sort()` is `None` (I mean, of course it is but...)
 - hashmap solution, got the break condition wrong, twice
 
+2025/04/08
+- didn't think in detail about the middpoint of the simple solution
+
 #### l_0150_rotate_array
 2025/03/26
 - didn't go for obvious solution
