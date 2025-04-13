@@ -39,7 +39,7 @@
 
 ----------------
 
-### To revisit
+### To revisit - algorithm
 
 #### l_0169_majority_element
 2025/03/24
@@ -54,6 +54,24 @@
 2025/04/08
 - didn't think in detail about the middpoint of the simple solution
 
+
+#### l_0055_jump_game_ii
+2025/03/27
+- didn't twig the obvious algorithm
+
+2025/04/06
+- didn't twig the obvious algorithm, again...
+
+
+#### l_0380_insert_delete_getrandom_o1
+2025/04/13
+- got lost in thinking if I can pull random from a hashmap
+- didn't think of the obvs thing I could do with a list here
+
+----------------
+
+### To revisit - coding details
+
 #### l_0150_rotate_array
 2025/03/26
 - didn't go for obvious solution
@@ -63,12 +81,6 @@
 2025/04/06
 - got most of the above, fluffed some of the coding
 
-#### l_0055_jump_game_ii
-2025/03/27
-- didn't twig the obvious algorithm
-
-2025/03/06
-- didn't twig the obvious algorithm, again...
 
 #### l_0274_h_index
 2025/03/27
@@ -82,3 +94,15 @@ hashmap solution that is O(N) time and O(N) memory
 - forgot the return value of `<list>.sort`, again
 - forgot what happens to a counter when you successfully leave a loop in Python
 - forgot to look over the code afterwards before running
+
+#### l_0015_3sum
+
+2025/04/11
+- first, quick solution good
+- went down a weird side track with the optimization
+- got stuck trying to think if there's an O(N) time solution, which there isn't structurally, and I think that's obvious?
+- once I went back to a more sensibly optimized solution, I made a couple simple mistakes
+
+
+2025/04/13
+- single typo didn't catch by eye :_(
