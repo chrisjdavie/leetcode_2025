@@ -54,15 +54,6 @@
 2025/04/08
 - didn't think in detail about the middpoint of the simple solution
 
-
-#### l_0055_jump_game_ii
-2025/03/27
-- didn't twig the obvious algorithm
-
-2025/04/06
-- didn't twig the obvious algorithm, again...
-
-
 #### l_0380_insert_delete_getrandom_o1
 2025/04/13
 - got lost in thinking if I can pull random from a hashmap
@@ -106,3 +97,16 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/04/13
 - single typo didn't catch by eye :_(
+
+
+
+#### l_0055_jump_game_ii
+2025/03/27
+- didn't twig the obvious algorithm
+
+2025/04/06
+- didn't twig the obvious algorithm, again...
+
+2025/04/13
+- kinda messy in the order of things
+- got the zero index wrong
