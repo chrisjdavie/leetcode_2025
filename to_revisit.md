@@ -54,22 +54,6 @@
 2025/04/14
 - my solution was correct and worked first time, but found a clearer solution in other peoples submissions (and showed a clearer mental model of the problem)
 
-#### l_0169_majority_element
-2025/03/24
-- didn't go for the obvious solutions
-- didn't go for the solution I knew, nerd sniped myself
-- didn't know Moore's voting algorithm (fine, but know now)
-
-2025/04/04
-- forgot return type of `<list>.sort()` is `None` (I mean, of course it is but...)
-- hashmap solution, got the break condition wrong, twice
-
-2025/04/08
-- didn't think in detail about the middpoint of the simple solution
-
-2025/04/13
-- thought in detail about the middpoint, but forgot arrays a zero-indexed
-
 ----------------
 
 ### To revisit - coding details
@@ -119,3 +103,23 @@ hashmap solution that is O(N) time and O(N) memory
 2025/04/13
 - kinda messy in the order of things
 - got the zero index wrong
+
+
+#### l_0169_majority_element
+2025/03/24
+- didn't go for the obvious solutions
+- didn't go for the solution I knew, nerd sniped myself
+- didn't know Moore's voting algorithm (fine, but know now)
+
+2025/04/04
+- forgot return type of `<list>.sort()` is `None` (I mean, of course it is but...)
+- hashmap solution, got the break condition wrong, twice
+
+2025/04/08
+- didn't think in detail about the middpoint of the simple solution
+
+2025/04/13
+- thought in detail about the middpoint, but forgot arrays a zero-indexed
+
+2025/04/14
+- when using Counter, I got the interface for a method wrong
