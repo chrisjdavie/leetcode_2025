@@ -37,6 +37,15 @@
 2025/04/06
 - solved it correctly
 
+
+#### l_0380_insert_delete_getrandom_o1
+2025/04/13
+- got lost in thinking if I can pull random from a hashmap
+- didn't think of the obvs thing I could do with a list here
+
+2025/04/14
+- solved it correctly
+
 ----------------
 
 ### To revisit - algorithm
@@ -56,11 +65,6 @@
 
 2025/04/13
 - thought in detail about the middpoint, but forgot arrays a zero-indexed
-
-#### l_0380_insert_delete_getrandom_o1
-2025/04/13
-- got lost in thinking if I can pull random from a hashmap
-- didn't think of the obvs thing I could do with a list here
 
 ----------------
 
