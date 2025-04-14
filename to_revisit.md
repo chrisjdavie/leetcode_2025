@@ -50,6 +50,10 @@
 
 ### To revisit - algorithm
 
+#### l_0238_product_of_array_except_self
+2025/04/14
+- my solution was correct and worked first time, but found a clearer solution in other peoples submissions (and showed a clearer mental model of the problem)
+
 #### l_0169_majority_element
 2025/03/24
 - didn't go for the obvious solutions
