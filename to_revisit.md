@@ -67,6 +67,9 @@
 2025/04/06
 - got most of the above, fluffed some of the coding
 
+2025/04/14
+- got it all correct, except when the index is greater than length
+
 
 #### l_0274_h_index
 2025/03/27

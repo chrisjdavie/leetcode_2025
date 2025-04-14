@@ -1,5 +1,5 @@
 """
-Using swaps and a pivot
+using swaps and pivots
 """
 from typing import List
 
@@ -10,15 +10,15 @@ class Solution:
         """
         k = k%len(nums)
 
-        for i_lhs in range(len(nums)//2):
-            i_rhs: int = len(nums) - i_lhs - 1
-            nums[i_lhs], nums[i_rhs] = nums[i_rhs], nums[i_lhs]
-
-        for i_lhs in range(k//2):
-            i_rhs: int = k - i_lhs - 1
-            nums[i_lhs], nums[i_rhs] = nums[i_rhs], nums[i_lhs]
+        for i in range(len(nums)//2):
+            i_swp: int = len(nums) - 1 - i
+            nums[i], nums[i_swp] = nums[i_swp], nums[i]
+        
+        for i in range(0, k//2):
+            i_swp: int = k - 1 - i
+            nums[i], nums[i_swp] = nums[i_swp], nums[i]
 
         for di in range((len(nums) - k)//2):
-            i_lhs: int = k + di
-            i_rhs: int = len(nums) - di - 1
-            nums[i_lhs], nums[i_rhs] = nums[i_rhs], nums[i_lhs]
+            i: int = k + di
+            i_swp: int = len(nums) - 1 - di
+            nums[i], nums[i_swp] = nums[i_swp], nums[i]
