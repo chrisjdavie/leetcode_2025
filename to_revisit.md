@@ -58,6 +58,13 @@
 
 ### To revisit - algorithm
 
+#### l_0134_gas_station
+2025/04/15
+- got the brute force right
+- touched on the correct high speed answer, but didn't think it through
+- my answer was right ball park, but less elegent
+- solution coppied from someone else shows more intuition for the problem
+
 ----------------
 
 ### To revisit - coding details
