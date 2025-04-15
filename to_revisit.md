@@ -46,13 +46,17 @@
 2025/04/14
 - solved it correctly
 
-----------------
-
-### To revisit - algorithm
 
 #### l_0238_product_of_array_except_self
 2025/04/14
 - my solution was correct and worked first time, but found a clearer solution in other peoples submissions (and showed a clearer mental model of the problem)
+
+2025/04/15
+- solved it well
+
+----------------
+
+### To revisit - algorithm
 
 ----------------
 

@@ -1,6 +1,4 @@
 """
-My solution worked first time, but this was in other people's submissions, and it's
-a lot cleaner, and also shows a clearer mental model of the problem
 """
 from typing import List
 
@@ -9,15 +7,14 @@ class Solution:
 
         result: list[int] = [1]*len(nums)
 
-        pref_product: int = 1
+        pref_prod: int = 1
         for i in range(len(nums)):
-            result[i] *= pref_product
-            pref_product *= nums[i]
-
-        suf_product: int = 1
+            result[i] = pref_prod
+            pref_prod *= nums[i]
+        
+        suf_prod: int = 1
         for i in range(len(nums) - 1, -1, -1):
-            result[i] *= suf_product
-            suf_product *= nums[i]
+            result[i] *= suf_prod
+            suf_prod *= nums[i]
 
         return result
-
