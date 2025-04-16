@@ -12,3 +12,7 @@
 #### l_0620_not_boring_movies
 2025/04/16
 - read the question
+
+#### l_1251_average_selling_price
+2025/04/16
+- my Postgres syntax is *super* rusty 
