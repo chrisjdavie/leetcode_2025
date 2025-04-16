@@ -8,3 +8,7 @@
 2025/04/15
 - forgot WHERE behaviour with NULL
 - forgot how to find NULLs with postgres
+
+#### l_0620_not_boring_movies
+2025/04/16
+- read the question
