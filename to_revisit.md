@@ -54,9 +54,6 @@
 2025/04/15
 - solved it well
 
-----------------
-
-### To revisit - algorithm
 
 #### l_0134_gas_station
 2025/04/15
@@ -64,6 +61,13 @@
 - touched on the correct high speed answer, but didn't think it through
 - my answer was right ball park, but less elegent
 - solution coppied from someone else shows more intuition for the problem
+
+2025/04/16
+- solved it well
+
+----------------
+
+### To revisit - algorithm
 
 ----------------
 
