@@ -69,6 +69,11 @@
 
 ### To revisit - algorithm
 
+#### l_0135_candy
+2025/04/16
+- got the right answer, but wasn't optimal
+- when optimizing, made 2 typos
+
 ----------------
 
 ### To revisit - coding details
