@@ -1,0 +1,2 @@
+- it had obvs been a long time since I did any binary tree work in an interview
+- and thou I got the right answer in the depth difference, it was kinda lucky (I wasn't thinking about it correctly)
