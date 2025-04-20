@@ -69,6 +69,10 @@
 
 ### To revisit - algorithm
 
+### interviews/repeated_strings
+2025/04/20
+- struggled with counter behaviour in if statements
+
 #### l_0135_candy
 2025/04/16
 - got the right answer, but wasn't optimal
