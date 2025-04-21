@@ -1,21 +1,16 @@
-
-
-def reduce_repeated_strings(input_str: str, max_len: int):
-    if max_len == 0:
-        return ""
+def reduce_repeated_strings(input_str: str, max_len: int) -> str:
 
     current_char: str = ""
-    char_count: int = 0
+    char_count: int = -1
 
-    output_str: list[str] = []
-    
+    result: list[str] = []
+
     for this_char in input_str:
-        if this_char == current_char and char_count >= max_len:
-            continue
-        if this_char != current_char:
+        if current_char != this_char:
             current_char = this_char
             char_count = 0
-        output_str.append(this_char)
-        char_count += 1
-    
-    return "".join(output_str)
+        if not (current_char == this_char and char_count >= max_len):
+            result.append(current_char)
+            char_count += 1
+
+    return "".join(result)
