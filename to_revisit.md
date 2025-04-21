@@ -69,14 +69,18 @@
 
 ### To revisit - algorithm
 
-### interviews/repeated_strings
-2025/04/20
-- struggled with counter behaviour in if statements
-
 #### l_0135_candy
 2025/04/16
 - got the right answer, but wasn't optimal
 - when optimizing, made 2 typos
+
+### mine/find_maxima
+2025/04/21
+- I got confused with the ordering of things - it's easier if I make sure arguments are geometrically aligned with the problem
+
+### l_0042_trapping_rain
+2025/04/21
+- Not solved yet, I got tied up in finding maxima and being confused
 
 ----------------
 
@@ -93,7 +97,6 @@
 
 2025/04/14
 - got it all correct, except when the index is greater than length
-
 
 #### l_0274_h_index
 2025/03/27
@@ -115,7 +118,6 @@ hashmap solution that is O(N) time and O(N) memory
 - went down a weird side track with the optimization
 - got stuck trying to think if there's an O(N) time solution, which there isn't structurally, and I think that's obvious?
 - once I went back to a more sensibly optimized solution, I made a couple simple mistakes
-
 
 2025/04/13
 - single typo didn't catch by eye :_(
@@ -150,3 +152,11 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/04/14
 - when using Counter, I got the interface for a method wrong
+
+
+### interviews/repeated_strings
+2025/04/20
+- struggled with counter behaviour in if statements
+
+2025/04/21
+- solved it - I was thinking incorrectly about loops, better now, but want to make sure I've got it
