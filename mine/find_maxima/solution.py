@@ -1,15 +1,19 @@
-from typing import List
+def find_maxima(height: list[int]) -> list[int]:
+    if len(height) == 1:
+        return [0]
 
-def find_maxima(height: List[int]) -> int:
     incline: bool = True
-
-    maximas: list[int] = []
+    results: list[int] = []
 
     for i, (h, h_p_1) in enumerate(zip(height[:-1], height[1:])):
         if h < h_p_1:
             incline = True
-        if h > h_p_1 and incline:
-            maximas.append(i)
+        if h > h_p_1:
+            if incline:
+                results.append(i)
             incline = False
+    else:
+        if incline:
+            results.append(i+1)
 
-    return maximas
+    return results

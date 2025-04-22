@@ -74,10 +74,6 @@
 - got the right answer, but wasn't optimal
 - when optimizing, made 2 typos
 
-### mine/find_maxima
-2025/04/21
-- I got confused with the ordering of things - it's easier if I make sure arguments are geometrically aligned with the problem
-
 ### l_0042_trapping_rain
 2025/04/21
 - Not solved yet, I got tied up in finding maxima and being confused
@@ -160,3 +156,10 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/04/21
 - solved it - I was thinking incorrectly about loops, better now, but want to make sure I've got it
+
+### mine/find_maxima
+2025/04/21
+- I got confused with the ordering of things - it's easier if I make sure arguments are geometrically aligned with the problem
+
+2025/04/22
+- wasn't quite there with anticipating corner cases
