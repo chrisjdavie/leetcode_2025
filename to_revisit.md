@@ -78,6 +78,9 @@
 2025/04/21
 - Not solved yet, I got tied up in finding maxima and being confused
 
+2025/04/22
+- I got something very overcomplicated that worked, but I didn't think about it correctly. Classic working down a dead end. The Pythonic solution I came up with is nice though
+
 ----------------
 
 ### To revisit - coding details

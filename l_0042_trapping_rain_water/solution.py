@@ -1,9 +1,19 @@
+"""
+solution using a lot of Python
+"""
+from itertools import accumulate
 from typing import List
 
 class Solution:
     def trap(self, height: List[int]) -> int:
-        incline: bool = False
+        if len(height) <= 1:
+            return 0
 
-        for i, (h, h_p_1) in enumerate(zip(height[:-1], height[1:])):
-           pass 
-        return -1
+        left_highest: list[int] = accumulate(height, max)
+        right_highest: list[int] = list(accumulate(height[::-1], max))[::-1]
+
+        return sum(
+            min((l_highest, r_highest)) - h
+            for h, l_highest, r_highest 
+                in zip(height, left_highest, right_highest)
+        )
