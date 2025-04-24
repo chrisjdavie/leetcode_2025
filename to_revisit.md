@@ -74,13 +74,6 @@
 - got the right answer, but wasn't optimal
 - when optimizing, made 2 typos
 
-### l_0042_trapping_rain
-2025/04/21
-- Not solved yet, I got tied up in finding maxima and being confused
-
-2025/04/22
-- I got something very overcomplicated that worked, but I didn't think about it correctly. Classic working down a dead end. The Pythonic solution I came up with is nice though
-
 ----------------
 
 ### To revisit - coding details
@@ -166,3 +159,14 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/04/22
 - wasn't quite there with anticipating corner cases
+
+
+### l_0042_trapping_rain
+2025/04/21
+- Not solved yet, I got tied up in finding maxima and being confused
+
+2025/04/22
+- I got something very overcomplicated that worked, but I didn't think about it correctly. Classic working down a dead end. The Pythonic solution I came up with is nice though
+
+2025/04/24
+- got it right, but made 2 small typos. Picked one up before running, second caused the tests to fail
