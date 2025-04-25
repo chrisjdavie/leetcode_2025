@@ -69,11 +69,6 @@
 
 ### To revisit - algorithm
 
-#### l_0135_candy
-2025/04/16
-- got the right answer, but wasn't optimal
-- when optimizing, made 2 typos
-
 ----------------
 
 ### To revisit - coding details
@@ -170,3 +165,7 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/04/24
 - got it right, but made 2 small typos. Picked one up before running, second caused the tests to fail
+
+## l_0125_valid_palindrome
+2025/05/25
+- got 2 things wrong with handling string cleaning...
