@@ -1,5 +1,4 @@
 """
-Optimised version of the previous
 """
 from typing import List
 

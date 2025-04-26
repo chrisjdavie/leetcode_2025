@@ -8,17 +8,13 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        k = k%len(nums)
+        k_piv: int = k%len(nums)
 
         for i in range(len(nums)//2):
-            i_swp: int = len(nums) - 1 - i
-            nums[i], nums[i_swp] = nums[i_swp], nums[i]
-        
-        for i in range(0, k//2):
-            i_swp: int = k - 1 - i
-            nums[i], nums[i_swp] = nums[i_swp], nums[i]
+            nums[i], nums[-i-1] = nums[-i-1], nums[i]
 
-        for di in range((len(nums) - k)//2):
-            i: int = k + di
-            i_swp: int = len(nums) - 1 - di
-            nums[i], nums[i_swp] = nums[i_swp], nums[i]
+        for i in range(k_piv//2):
+            nums[i], nums[k_piv-i-1] = nums[k_piv-i-1], nums[i]
+
+        for i in range((len(nums) - k_piv)//2):
+            nums[k_piv+i], nums[-i-1] = nums[-i-1], nums[k_piv+i]

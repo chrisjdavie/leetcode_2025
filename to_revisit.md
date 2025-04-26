@@ -73,18 +73,6 @@
 
 ### To revisit - coding details
 
-#### l_0150_rotate_array
-2025/03/26
-- didn't go for obvious solution
-- took me a while to understand the in place solution
-- got some details in the place solution wrong
-
-2025/04/06
-- got most of the above, fluffed some of the coding
-
-2025/04/14
-- got it all correct, except when the index is greater than length
-
 #### l_0274_h_index
 2025/03/27
 - got the O(1) memory and O(NlogN) time solution, but missed the
@@ -169,3 +157,18 @@ hashmap solution that is O(N) time and O(N) memory
 ## l_0125_valid_palindrome
 2025/05/25
 - got 2 things wrong with handling string cleaning...
+
+#### l_0150_rotate_array
+2025/03/26
+- didn't go for obvious solution
+- took me a while to understand the in place solution
+- got some details in the place solution wrong
+
+2025/04/06
+- got most of the above, fluffed some of the coding
+
+2025/04/14
+- got it all correct, except when the index is greater than length
+
+2025/04/26
+- got it all correct, except didn't think carefully enough about iteration conditions
