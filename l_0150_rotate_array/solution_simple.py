@@ -1,5 +1,4 @@
 """
-using swaps and pivots
 """
 from typing import List
 
@@ -8,4 +7,6 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        pass
+        for i, n in enumerate(nums.copy()):
+            i_rot: int = (i + k)%len(nums)
+            nums[i_rot] = n

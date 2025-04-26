@@ -154,11 +154,11 @@ hashmap solution that is O(N) time and O(N) memory
 2025/04/24
 - got it right, but made 2 small typos. Picked one up before running, second caused the tests to fail
 
-## l_0125_valid_palindrome
+### l_0125_valid_palindrome
 2025/05/25
 - got 2 things wrong with handling string cleaning...
 
-#### l_0150_rotate_array
+### l_0150_rotate_array
 2025/03/26
 - didn't go for obvious solution
 - took me a while to understand the in place solution
@@ -172,3 +172,8 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/04/26
 - got it all correct, except didn't think carefully enough about iteration conditions
+
+### l_0209_minimum_size_subarray
+2025/04/26
+- didn't read the question fully
+- got the min size and output slightly wrong
