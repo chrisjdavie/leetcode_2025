@@ -1,13 +1,17 @@
+"""
+"""
 from typing import List
 
 class Solution:
     def hIndex(self, citations: List[int]) -> int:
 
         citations.sort(reverse=True)
-        for cand_h_index, cit in enumerate(citations):
-            if cand_h_index >= cit:
+
+        for h, cit in enumerate(citations):
+            if h + 1 > cit:
+                h_index: int = h
                 break
         else:
-            cand_h_index += 1
+            h_index: int = len(citations)
 
-        return cand_h_index
+        return h_index

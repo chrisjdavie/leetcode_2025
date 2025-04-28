@@ -73,19 +73,6 @@
 
 ### To revisit - coding details
 
-#### l_0274_h_index
-2025/03/27
-- got the O(1) memory and O(NlogN) time solution, but missed the
-hashmap solution that is O(N) time and O(N) memory
-
-2025/04/03
-- got the solution fast, but really screwed up coding it well
-
-2025/04/07
-- forgot the return value of `<list>.sort`, again
-- forgot what happens to a counter when you successfully leave a loop in Python
-- forgot to look over the code afterwards before running
-
 #### l_0015_3sum
 
 2025/04/11
@@ -177,3 +164,20 @@ hashmap solution that is O(N) time and O(N) memory
 2025/04/26
 - didn't read the question fully
 - got the min size and output slightly wrong
+
+#### l_0274_h_index
+2025/03/27
+- got the O(1) memory and O(NlogN) time solution, but missed the
+hashmap solution that is O(N) time and O(N) memory
+
+2025/04/03
+- got the solution fast, but really screwed up coding it well
+
+2025/04/07
+- forgot the return value of `<list>.sort`, again
+- forgot what happens to a counter when you successfully leave a loop in Python
+- forgot to look over the code afterwards before running
+
+2025/04/28
+- got confused with inequalities again...
+- got really confused with inequalities. Starting to see how people do this stuff reliably though...
