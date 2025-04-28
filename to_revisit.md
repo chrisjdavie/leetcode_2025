@@ -181,3 +181,7 @@ hashmap solution that is O(N) time and O(N) memory
 2025/04/28
 - got confused with inequalities again...
 - got really confused with inequalities. Starting to see how people do this stuff reliably though...
+
+### l_0036_valid_sudoku
+2025/04/28
+- got most right, but made a mistake at the end as to what I was indexing over
