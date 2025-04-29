@@ -189,3 +189,8 @@ hashmap solution that is O(N) time and O(N) memory
 2025/04/29
 - typo
 - arguments to sorted wrong
+
+### l_0383_ransom_note
+
+2025/04/29
+- wasn't paying attention when defining variables
