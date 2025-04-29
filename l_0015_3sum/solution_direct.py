@@ -5,10 +5,10 @@ from typing import List
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
 
-        result: set[tuple] = set()
+        triplet: set[tuple[int, int, int]] = set(
+            tuple(sorted(comb))
+            for comb in combinations(nums, 3)
+                if sum(comb) == 0
+        )
 
-        for comb in combinations(nums, 3):
-            if sum(comb) == 0:
-                result.add(tuple(sorted(comb)))
-
-        return [list(comb) for comb in result]
+        return [list(comb) for comb in triplet]

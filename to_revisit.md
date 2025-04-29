@@ -73,17 +73,6 @@
 
 ### To revisit - coding details
 
-#### l_0015_3sum
-
-2025/04/11
-- first, quick solution good
-- went down a weird side track with the optimization
-- got stuck trying to think if there's an O(N) time solution, which there isn't structurally, and I think that's obvious?
-- once I went back to a more sensibly optimized solution, I made a couple simple mistakes
-
-2025/04/13
-- single typo didn't catch by eye :_(
-
 #### l_0055_jump_game_ii
 2025/03/27
 - didn't twig the obvious algorithm
@@ -185,3 +174,18 @@ hashmap solution that is O(N) time and O(N) memory
 ### l_0036_valid_sudoku
 2025/04/28
 - got most right, but made a mistake at the end as to what I was indexing over
+
+#### l_0015_3sum
+
+2025/04/11
+- first, quick solution good
+- went down a weird side track with the optimization
+- got stuck trying to think if there's an O(N) time solution, which there isn't structurally, and I think that's obvious?
+- once I went back to a more sensibly optimized solution, I made a couple simple mistakes
+
+2025/04/13
+- single typo didn't catch by eye :_(
+
+2025/04/29
+- typo
+- arguments to sorted wrong
