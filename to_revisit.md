@@ -65,13 +65,6 @@
 2025/04/16
 - solved it well
 
-----------------
-
-### To revisit - algorithm
-
-----------------
-
-### To revisit - coding details
 
 #### l_0055_jump_game_ii
 2025/03/27
@@ -83,6 +76,17 @@
 2025/04/13
 - kinda messy in the order of things
 - got the zero index wrong
+
+2025/04/30
+- solved it well
+
+----------------
+
+### To revisit - algorithm
+
+----------------
+
+### To revisit - coding details
 
 
 #### l_0169_majority_element

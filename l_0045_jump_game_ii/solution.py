@@ -3,15 +3,14 @@ from typing import List
 class Solution:
     def jump(self, nums: List[int]) -> int:
 
-        jumps: int = 0
-        current_furthest: int = 0
-        next_furthest: int = 0
+        prev_max_dist: int = 0
+        next_max_dist: int = 0
+        jump_counter: int = 0
 
-        for i, dist in enumerate(nums[:-1]):
-            if i + dist > next_furthest:
-                next_furthest = i + dist
-            if i == current_furthest:
-                jumps += 1
-                current_furthest = next_furthest
-
-        return jumps
+        for i, n in enumerate(nums[:-1]):
+            next_max_dist = max((next_max_dist, n + i))
+            if i == prev_max_dist:
+                jump_counter += 1
+                prev_max_dist = next_max_dist
+    
+        return jump_counter
