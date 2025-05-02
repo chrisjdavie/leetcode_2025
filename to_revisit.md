@@ -82,20 +82,24 @@
 
 ----------------
 
-### To revisit - algorithm
+### To revisit - conceptual
+
+#### l_0020_valid_parentheses
+2024/05/02
+- didn't think about all the edge cases
 
 ----------------
 
 ### To revisit - coding details
 
-### interviews/repeated_strings
+#### interviews/repeated_strings
 2025/04/20
 - struggled with counter behaviour in if statements
 
 2025/04/21
 - solved it - I was thinking incorrectly about loops, better now, but want to make sure I've got it
 
-### mine/find_maxima
+#### mine/find_maxima
 2025/04/21
 - I got confused with the ordering of things - it's easier if I make sure arguments are geometrically aligned with the problem
 
@@ -103,7 +107,7 @@
 - wasn't quite there with anticipating corner cases
 
 
-### l_0042_trapping_rain
+#### l_0042_trapping_rain
 2025/04/21
 - Not solved yet, I got tied up in finding maxima and being confused
 
@@ -113,11 +117,11 @@
 2025/04/24
 - got it right, but made 2 small typos. Picked one up before running, second caused the tests to fail
 
-### l_0125_valid_palindrome
+#### l_0125_valid_palindrome
 2025/05/25
 - got 2 things wrong with handling string cleaning...
 
-### l_0150_rotate_array
+#### l_0150_rotate_array
 2025/03/26
 - didn't go for obvious solution
 - took me a while to understand the in place solution
@@ -132,7 +136,7 @@
 2025/04/26
 - got it all correct, except didn't think carefully enough about iteration conditions
 
-### l_0209_minimum_size_subarray
+#### l_0209_minimum_size_subarray
 2025/04/26
 - didn't read the question fully
 - got the min size and output slightly wrong
@@ -154,7 +158,7 @@ hashmap solution that is O(N) time and O(N) memory
 - got confused with inequalities again...
 - got really confused with inequalities. Starting to see how people do this stuff reliably though...
 
-### l_0036_valid_sudoku
+#### l_0036_valid_sudoku
 2025/04/28
 - got most right, but made a mistake at the end as to what I was indexing over
 
@@ -173,7 +177,7 @@ hashmap solution that is O(N) time and O(N) memory
 - typo
 - arguments to sorted wrong
 
-### l_0383_ransom_note
+#### l_0383_ransom_note
 
 2025/04/29
 - wasn't paying attention when defining variables
