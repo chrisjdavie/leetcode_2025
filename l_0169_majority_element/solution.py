@@ -4,6 +4,17 @@ from typing import List
 
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        nums_count: Counter = Counter(nums)
-        return nums_count.most_common(1)[0][0]
 
+        cand: int = nums[0]
+        votes: int = 1
+
+        for n in nums[1:]:
+            if n == cand:
+                votes += 1
+            else:
+                votes -= 1
+                if votes == 0:
+                    cand = n
+                    votes = 1
+
+        return cand
