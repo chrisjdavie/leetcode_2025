@@ -99,6 +99,9 @@
 2025/04/21
 - solved it - I was thinking incorrectly about loops, better now, but want to make sure I've got it
 
+2025/05/05
+- messed up in small ways, struggling less with this now but still not perfect
+
 #### mine/find_maxima
 2025/04/21
 - I got confused with the ordering of things - it's easier if I make sure arguments are geometrically aligned with the problem

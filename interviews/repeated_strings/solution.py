@@ -1,16 +1,16 @@
 def reduce_repeated_strings(input_str: str, max_len: int) -> str:
 
-    current_char: str = ""
-    char_count: int = -1
+    reduced: list[str] = []
 
-    result: list[str] = []
+    current_char: str = ""
+    count: int = -1
 
     for this_char in input_str:
-        if current_char != this_char:
+        if this_char != current_char:
             current_char = this_char
-            char_count = 0
-        if not (current_char == this_char and char_count >= max_len):
-            result.append(current_char)
-            char_count += 1
-
-    return "".join(result)
+            count = 0
+        if count < max_len:
+            reduced.append(this_char)
+            count += 1
+    
+    return "".join(reduced)
