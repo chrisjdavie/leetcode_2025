@@ -92,16 +92,6 @@
 
 ### To revisit - coding details
 
-#### interviews/repeated_strings
-2025/04/20
-- struggled with counter behaviour in if statements
-
-2025/04/21
-- solved it - I was thinking incorrectly about loops, better now, but want to make sure I've got it
-
-2025/05/05
-- messed up in small ways, struggling less with this now but still not perfect
-
 #### l_0141_linked_list
 2025/05/05
 - the initial simple solution, I assumed the val was a representation of the node, when it was just a val in a linked list
@@ -216,3 +206,16 @@ hashmap solution that is O(N) time and O(N) memory
 - thought in detail about the middpoint, but forgot arrays a zero-indexed
 - when using Counter, I got the interface for a method wrong
 - accessed the first element in an array using `[1]`...
+
+#### interviews/repeated_strings
+2025/04/20
+- struggled with counter behaviour in if statements
+
+2025/04/21
+- solved it - I was thinking incorrectly about loops, better now, but want to make sure I've got it
+
+2025/05/05
+- messed up in small ways, struggling less with this now but still not perfect
+
+2025/05/06
+- got it right, but keeping it here cos it was more of a struggle to get to this point than it should have been

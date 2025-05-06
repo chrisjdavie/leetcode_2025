@@ -12,5 +12,5 @@ def reduce_repeated_strings(input_str: str, max_len: int) -> str:
         if count < max_len:
             reduced.append(this_char)
             count += 1
-
+    
     return "".join(reduced)
