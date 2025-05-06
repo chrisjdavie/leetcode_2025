@@ -84,10 +84,6 @@
 
 ### To revisit - conceptual
 
-#### l_0020_valid_parentheses
-2024/05/02
-- didn't think about all the edge cases
-
 ----------------
 
 ### To revisit - coding details

@@ -1,6 +1,6 @@
 import pytest
 
-from l_0020_valid_parentheses.previous.solution import Solution
+from l_0020_valid_parentheses.solution import Solution
 
 
 @pytest.mark.parametrize(
@@ -10,7 +10,8 @@ from l_0020_valid_parentheses.previous.solution import Solution
         (r"()[]{}", True),
         ("(]", False),
         ("([])", True),
-        ("[", False),
+        (")", False),
+        ("(", False),
     )
 )
 def test(s, expected_output):
