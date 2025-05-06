@@ -92,13 +92,6 @@
 
 ### To revisit - coding details
 
-#### l_0141_linked_list
-2025/05/05
-- the initial simple solution, I assumed the val was a representation of the node, when it was just a val in a linked list
-- I didn't know you could add any object to a set so long as __repr__ isn't overloaded with something immutable
-- there was a bit of mess in there
-- I think, probably, I'm not that great at puzzles involving nodes
-
 #### mine/find_maxima
 2025/04/21
 - I got confused with the ordering of things - it's easier if I make sure arguments are geometrically aligned with the problem
@@ -219,3 +212,14 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/05/06
 - got it right, but keeping it here cos it was more of a struggle to get to this point than it should have been
+
+
+#### l_0141_linked_list
+2025/05/05
+- the initial simple solution, I assumed the val was a representation of the node, when it was just a val in a linked list
+- I didn't know you could add any object to a set so long as __repr__ isn't overloaded with something immutable
+- there was a bit of mess in there
+- I think, probably, I'm not that great at puzzles involving nodes
+
+2025/05/06
+- got it right, but keeping it here cos it should have been more straightforward getting it right

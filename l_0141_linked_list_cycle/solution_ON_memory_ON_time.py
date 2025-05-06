@@ -8,16 +8,15 @@ class ListNode:
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        if head is None:
-            return False
+        visited: set[ListNode] = set()
 
-        slow: Optional[ListNode] = head
-        fast: Optional[ListNode] = head.next
+        prev_node: Optional[ListNode] = head
 
         while True:
-            if fast is None or fast.next is None:
+            if prev_node is None:
                 return False
-            if fast is slow:
+            if prev_node in visited:
                 return True
-            slow = slow.next
-            fast = fast.next.next
+            
+            visited.add(prev_node)
+            prev_node = prev_node.next
