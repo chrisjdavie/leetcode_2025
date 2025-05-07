@@ -1,6 +1,5 @@
 ### Got right
 
-
 #### l_0088_merge_sorted_array
 2025/03/23
 - didn't get solution first time
@@ -79,6 +78,14 @@
 
 2025/04/30
 - solved it well
+
+
+
+
+#### l_0199_binary_tree_right_side_view
+2025/05/07
+- solved it, buuuut, made a real mess of the tests, did not read or think about the code. Not going to hit myself for that, but it's worth being aware of if I do it more than once
+
 
 ----------------
 
