@@ -88,14 +88,6 @@
 
 ### To revisit - coding details
 
-#### mine/find_maxima
-2025/04/21
-- I got confused with the ordering of things - it's easier if I make sure arguments are geometrically aligned with the problem
-
-2025/04/22
-- wasn't quite there with anticipating corner cases
-
-
 #### l_0042_trapping_rain
 2025/04/21
 - Not solved yet, I got tied up in finding maxima and being confused
@@ -219,3 +211,14 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/05/06
 - got it right, but keeping it here cos it should have been more straightforward getting it right
+
+
+#### mine/find_maxima
+2025/04/21
+- I got confused with the ordering of things - it's easier if I make sure arguments are geometrically aligned with the problem
+
+2025/04/22
+- wasn't quite there with anticipating corner cases
+
+2025/05/07
+- couple of minor typos
