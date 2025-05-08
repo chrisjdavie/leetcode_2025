@@ -89,12 +89,16 @@
 
 ### To revisit - conceptual
 
+#### l_0530_minimum_absolute_different_in_bst
+2025/05/08
+- there was a property of binary trees I didn't understand, so I came up with a working but slow and over complicated solution
+
 ----------------
 
 ### To revisit - coding details
 
 #### l_0125_valid_palindrome
-2025/05/25
+2025/03/25
 - got 2 things wrong with handling string cleaning...
 
 #### l_0150_rotate_array
