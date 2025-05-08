@@ -3,13 +3,11 @@ from typing import List, Iterator
 
 class Solution:
     def trap(self, height: List[int]) -> int:
-        if len(height) <= 2:
-            return 0
-        
-        left_max_height: Iterator[int] = accumulate(height, max)
-        right_max_height: List[int] = list(accumulate(height[::-1], max))[::-1]
+
+        max_height_left: Iterator[int] = accumulate(height, max)
+        max_height_right: list[int] = list(accumulate(height[::-1], max))
+        max_height_right.reverse()
 
         return sum(
-            min((l_m_h, r_m_h)) - h
-            for h, l_m_h, r_m_h in zip(height, left_max_height, right_max_height)
+            min((mhl, mhr)) - h for h, mhl, mhr in zip(height, max_height_left, max_height_right)
         )

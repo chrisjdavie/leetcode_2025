@@ -80,8 +80,6 @@
 - solved it well
 
 
-
-
 #### l_0199_binary_tree_right_side_view
 2025/05/07
 - solved it, buuuut, made a real mess of the tests, did not read or think about the code. Not going to hit myself for that, but it's worth being aware of if I do it more than once
@@ -94,16 +92,6 @@
 ----------------
 
 ### To revisit - coding details
-
-#### l_0042_trapping_rain
-2025/04/21
-- Not solved yet, I got tied up in finding maxima and being confused
-
-2025/04/22
-- I got something very overcomplicated that worked, but I didn't think about it correctly. Classic working down a dead end. The Pythonic solution I came up with is nice though
-
-2025/04/24
-- got it right, but made 2 small typos. Picked one up before running, second caused the tests to fail
 
 #### l_0125_valid_palindrome
 2025/05/25
@@ -229,3 +217,16 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/05/07
 - couple of minor typos
+
+#### l_0042_trapping_rain
+2025/04/21
+- Not solved yet, I got tied up in finding maxima and being confused
+
+2025/04/22
+- I got something very overcomplicated that worked, but I didn't think about it correctly. Classic working down a dead end. The Pythonic solution I came up with is nice though
+
+2025/04/24
+- got it right, but made 2 small typos. Picked one up before running, second caused the tests to fail
+
+2025/05/08
+- got it exactly backwards
