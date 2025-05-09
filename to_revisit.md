@@ -238,3 +238,8 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/05/09
 - made a typo
+
+
+#### l_0200_number_of_islands
+2025/05/09
+- silly mistake in bounds checking
