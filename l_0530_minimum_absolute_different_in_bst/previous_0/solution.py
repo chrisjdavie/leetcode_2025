@@ -10,17 +10,17 @@ class TreeNode:
 class Solution:
 
     def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
-        
-        prev: Optional[TreeNode] = None
+        if root.left is None and root.right is None:
+            return self._large_number
+
         min_diff: int = 10**5 + 1
+        prev: Optional[TreeNode] = None
 
-        def _dfs(node: TreeNode):
-            nonlocal prev
+        def _dfs(node: Optional[TreeNode]):
             nonlocal min_diff
-
+            nonlocal prev
             if node is None:
                 return
-            
             _dfs(node.left)
             if prev is not None:
                 min_diff = min((min_diff, node.val - prev.val))

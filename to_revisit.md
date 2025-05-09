@@ -89,10 +89,6 @@
 
 ### To revisit - conceptual
 
-#### l_0530_minimum_absolute_different_in_bst
-2025/05/08
-- there was a property of binary trees I didn't understand, so I came up with a working but slow and over complicated solution
-
 ----------------
 
 ### To revisit - coding details
@@ -234,3 +230,11 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/05/08
 - got it exactly backwards
+
+
+#### l_0530_minimum_absolute_different_in_bst
+2025/05/08
+- there was a property of binary trees I didn't understand, so I came up with a working but slow and over complicated solution
+
+2025/05/09
+- made a typo
