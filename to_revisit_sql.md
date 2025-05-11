@@ -16,3 +16,7 @@
 #### l_1251_average_selling_price
 2025/04/16
 - my Postgres syntax is *super* rusty 
+
+#### l_1731_the_number_of_employees_which_report_to_each_employee
+2025/05/11
+- just, kinda stopped halfway through and was surprised it failed when I ran it
