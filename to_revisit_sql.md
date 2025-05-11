@@ -1,4 +1,11 @@
-### To revisit
+### To revisit - things I didn't know
+
+#### l_0625_exchange_seats
+2025/05/22
+- got `MAX` wrong
+- forgot the postgres syntax for `CASE` `WHEN`
+
+### To revisit - typos and such
 
 #### l_1757_recyclable_and_low_fat_products
 2025/04/15
