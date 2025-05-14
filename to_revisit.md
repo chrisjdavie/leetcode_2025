@@ -247,3 +247,8 @@ hashmap solution that is O(N) time and O(N) memory
 #### l_0200_number_of_islands
 2025/05/09
 - silly mistake in bounds checking
+
+#### l_2095_find_median_from_a_data_stream
+2025/05/14
+- apparently I struggle with intution around comparing the length of heaps to each other, I get the inequality the wrong way round?...
+- I checked the zeroth value of an empty list...
