@@ -252,3 +252,6 @@ hashmap solution that is O(N) time and O(N) memory
 2025/05/14
 - apparently I struggle with intution around comparing the length of heaps to each other, I get the inequality the wrong way round?...
 - I checked the zeroth value of an empty list...
+
+2025/05/15
+- developing more fluency in coding with heaps, but still making small mistakes
