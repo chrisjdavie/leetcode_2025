@@ -1,7 +1,7 @@
 """
 Should be NlogN time (all operations)
 """
-from heapq import heappush, heappop
+from heapq import heappop, heappush
 
 class MedianFinder:
 
