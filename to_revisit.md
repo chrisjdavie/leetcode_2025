@@ -89,6 +89,18 @@
 
 ### To revisit - conceptual
 
+
+#### l_2095_find_median_from_a_data_stream
+2025/05/14
+- apparently I struggle with intution around comparing the length of heaps to each other, I get the inequality the wrong way round?...
+- I checked the zeroth value of an empty list...
+
+2025/05/15
+- developing more fluency in coding with heaps, but still making small mistakes
+
+2025/05/19
+- I think there's an approach to this using values not sizes, need to think about that
+
 #### l_0480_sliding_window_median
 2025/05/14
 - this came up in an interview, the way to solve it is much, much more straight forward if you've covered 295 first
@@ -247,11 +259,3 @@ hashmap solution that is O(N) time and O(N) memory
 #### l_0200_number_of_islands
 2025/05/09
 - silly mistake in bounds checking
-
-#### l_2095_find_median_from_a_data_stream
-2025/05/14
-- apparently I struggle with intution around comparing the length of heaps to each other, I get the inequality the wrong way round?...
-- I checked the zeroth value of an empty list...
-
-2025/05/15
-- developing more fluency in coding with heaps, but still making small mistakes
