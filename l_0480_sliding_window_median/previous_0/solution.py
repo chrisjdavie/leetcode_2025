@@ -36,7 +36,7 @@ class Solution:
                     self.move(large, small)
             else: # goto this branch if nums[i] belongs to small heap
                 heapq.heappush(small, (-nums[i], i)) 
-                if nums[i - k] >= large[0][0]: # means the outgoing number is in small heap
+                if nums[i - k] >= large[0][0]: # means the outgoing number is in large heap
                     self.move(small, large)
 
             # # only need to pop the number if the number is at the top of the heap and it is out of the window 
