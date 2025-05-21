@@ -1,5 +1,6 @@
 """
-Taken from leetcode
+Inspired by someone else's answer from leetcode, incorporated into
+the interview form
 
 This, I think, reflects the best one, it incoorporates two bits of knowledge.
 The first is that, each removing and adding to the list can only move the
@@ -34,17 +35,14 @@ class SlidingWindow:
         # building up the first n numbers
         if len(self._numbers) < self._window_size:
             self._numbers.append(num)
-            if not self._smaller or num <= -self._smaller[0][0]:
-                heappush(self._smaller, (-num, self._count))
-                if len(self._smaller) > len(self._larger) + 1:
-                    num_mv, idx = heappop(self._smaller)
-                    heappush(self._larger, (-num_mv, idx))
-            else:
-                heappush(self._larger, (num, self._count))
-                if len(self._larger) > len(self._smaller):
-                    num_mv, idx = heappop(self._larger)
-                    heappush(self._smaller, (-num_mv, idx))
+            heappush(self._smaller, (-num, self._count))
             self._count += 1
+
+            # set up the stacks once
+            if self._count == self._window_size:
+                while len(self._smaller) > len(self._larger) + 1:
+                    num_mv, idx = heappop(self._smaller)
+                    heappush(self._larger, (-num_mv, idx))            
         else:
             # add new number, while retaining heap balance
             self._numbers.append(num)
@@ -86,4 +84,3 @@ class Solution:
             results.append(sw.median())
 
         return results
-
