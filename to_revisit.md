@@ -89,6 +89,11 @@
 
 ### To revisit - conceptual
 
+#### l_0909_snakes_and_ladders
+2025/04/22
+- this is a bfs solution to do optimally - I think you need to think about it in terms of what you're trying to minimise, the number of moves, and always process the fewest. Therefore, if you've enqueued a position in the same or fewer number of moves, you don't have to do it again
+- a way to do this in bfs is to store a map of pos: moves, and if you're in a pos in more moves, skip it
+
 ----------------
 
 ### To revisit - coding details
