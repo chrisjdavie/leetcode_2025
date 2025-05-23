@@ -1,133 +1,51 @@
 from collections import deque
-from itertools import zip_longest
 from typing import List
 
-
 class Solution:
-    """
-    BFS with 'deepest ordinary square' dominance pruning for LC 909.
-    • Always enqueue every ladder/snake jump reachable by rolls 1-6.
-    • Among plain landings enqueue only the deepest one, marking the rest visited immediately.
-    Cuts the queue 2-4× while preserving optimality.
-    """
     def snakesAndLadders(self, board: List[List[int]]) -> int:
-        # ---------- 1. Flatten zig-zag board ---------- #
-        n = len(board)
-        cells: List[int] = [-1]  # cells[1] = square 1
-        ltr = True  # left-to-right toggle
-        for r in range(n - 1, -1, -1):  # bottom → top
-            row = board[r] if ltr else list(reversed(board[r]))
-            cells.extend(row)
-            ltr = not ltr
-        target = len(cells) - 1  # final square number (n²)
 
-        # ---------- 2. BFS initialisation ---------- #
-        queue = deque([(1, 0)])  # (square, moves)
-        visited = {1}
+        # flatten
+        linear_board: list[int] = []
 
-        # ---------- 3. Main loop ---------- #
+        reverse_toggle: bool = False
+
+        for row in board[::-1]:
+            linear_board.extend(row) if not reverse_toggle else linear_board.extend(row[::-1])
+            reverse_toggle: bool = not reverse_toggle
+
+        # zero index
+        linear_board = [l-1 if l != -1 else l for l in linear_board]
+
+        # bfs as only interested in the minimum number of moves it takes to
+        # reach a given square
+
+        # position, moves
+        queue: deque[int,int] = deque([(0, 0)])
+
+        # only have to visit each square once, as the first time will be the
+        # fewest number of moves to get there (bfs)
+        visited = {0,}
+
         while queue:
-            square, moves = queue.popleft()
+
+            position, moves = queue.popleft()
             
-            # a) Already there
-            if square == target:
-                return moves
-                
-            # b) One plain roll can finish - immediately check if we're close to target
-            if square >= target - 6:
-                return moves + 1
-                
-            # ---------- 3.1 classify rolls 1-6 ----------
-            jump_mask = []
-            for r in range(1, 7):
-                if square + r <= target:
-                    jump_mask.append(cells[square + r] != -1)
-                else:
-                    jump_mask.append(False)
-                    
-            deepest_plain = None
-            for r in range(6, 0, -1):  # rolls 6 → 1
-                landing = square + r
-                if landing > target:
+            furthest_ordinary: int = 0
+            for step in range(1 + position, 7 + position):
+                if step in visited:
                     continue
-                    
-                if jump_mask[r - 1]:  # ladder / snake
-                    dest = cells[landing]
-                    if dest == target:  # jump ends on goal
-                        return moves + 1
-                    if dest not in visited:
-                        visited.add(dest)
-                        queue.append((dest, moves + 1))
-                else:  # ordinary landing
-                    if landing not in visited:
-                        visited.add(landing)  # mark now
-                        if deepest_plain is None:
-                            deepest_plain = landing  # keep only one
-                            
-            if deepest_plain is not None:
-                queue.append((deepest_plain, moves + 1))
-                
-        return -1  # unreachable
+                visited.add(step)
 
-class Solution:
-    def snakesAndLadders(self, board: List[List[int]]) -> int:
+                dest: int = linear_board[step]
 
-        # linearise
-        linear_board: List[int] = []
-
-        for row_odd, row_even in zip_longest(board[::-2], board[-2::-2], fillvalue=[]):
-            for square in row_odd:
-                if square != -1:
-                    linear_board.append(square - 1)
+                if step == len(linear_board) - 1 or dest == len(linear_board) - 1:
+                    return moves + 1
+                if dest == -1:
+                    furthest_ordinary = step
                 else:
-                    linear_board.append(square)
-            for square in row_even[::-1]:
-                if square != -1:
-                    linear_board.append(square - 1)
-                else:
-                    linear_board.append(square)
+                    queue.append((dest, moves + 1))
 
-        LARGE_TURNS: int = len(board)**2 + 1 # bigger than max possible turns
-        turns_min: int = LARGE_TURNS
+            if furthest_ordinary:
+                queue.append((furthest_ordinary, moves + 1))
 
-        visited: set[int] = set()
-        # dfs
-        def _dfs(pos: int, turns: int) -> None:
-            nonlocal turns_min
-            # no point in exploring if a better answer is found
-            if turns >= turns_min:
-                return
-            # already visited, will not reduce the number of turns
-            if pos in visited:
-                return
-            visited.add(pos) # do not pop, as we are exploring furthest first
-
-            # if you land on the final square, you don't take another turn
-            if pos == len(linear_board) - 1:
-                # finished exploration of this node
-                turns_min = min((turns_min, turns))
-                visited.remove(pos)                
-                return
-
-            final_minus_1_step: int | None = None
-            for step in range(1, 7):
-                if step + pos == len(linear_board) - 1:
-                    turns_min = min((turns_min, turns + 1))
-                    visited.remove(pos)
-                    return
-                if linear_board[step + pos] != -1:
-                    _dfs(linear_board[step + pos], turns + 1)
-                else:
-                    final_minus_1_step = step
-
-            if final_minus_1_step:
-                _dfs(pos + final_minus_1_step, turns + 1)
-
-            # finished exploration of this node
-            visited.remove(pos)
-            return 
-
-        _dfs(0,0)
-        if turns_min >= LARGE_TURNS:
-            return -1
-        return turns_min
+        return -1
