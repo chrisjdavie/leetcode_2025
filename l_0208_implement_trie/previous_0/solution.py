@@ -6,33 +6,38 @@ sentinel as well, but less general.
 
 I was also messing about with recursive typing cos I don't know how to do that
 """
-END_OF_WORD: str = "end_of_word"
+from typing import Optional
+
+class EndOfWord:
+    pass
+
+Node = dict[str | EndOfWord, Optional['Node']]
 
 class Trie:
 
     def __init__(self):
-        self._prefix_trie: dict[str, dict | None] = {}
+        self._prefix_trie: Node = {}
 
     def insert(self, word: str) -> None:
-        curr: dict[str, dict | None] = self._prefix_trie
+        curr: dict = self._prefix_trie
         for w in word:
             if w not in curr:
                 curr[w] = {}
             curr = curr[w]
-        curr[END_OF_WORD] = None
+        curr[EndOfWord] = None
 
-    def search(self, word: str) -> bool:
-        curr: dict[str, dict | None] = self._prefix_trie
+    def _prefSearch(self, word: str) -> Node | bool:
+        curr: dict = self._prefix_trie
         for w in word:
             if w not in curr:
                 return False
             curr = curr[w]
-        return END_OF_WORD in curr
+        return curr
+
+    def search(self, word: str) -> bool:
+        if opp := self._prefSearch(word):
+            return EndOfWord in opp
+        return False
 
     def startsWith(self, prefix: str) -> bool:
-        curr: dict[str, dict | None] = self._prefix_trie
-        for w in prefix:
-            if w not in curr:
-                return False
-            curr = curr[w]
-        return True
+        return bool(self._prefSearch(prefix))

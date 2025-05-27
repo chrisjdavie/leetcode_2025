@@ -89,11 +89,6 @@
 
 ### To revisit - conceptual
 
-#### l_0208_implement_prefix_tree
-2025/04/26
-- didn't think to use a sentinel, simplify all this
-- I wasn't very smooth in the implementation
-
 #### l_0909_snakes_and_ladders
 2025/04/22
 - this is a bfs solution to do optimally - I think you need to think about it in terms of what you're trying to minimise, the number of moves, and always process the fewest. Therefore, if you've enqueued a position in the same or fewer number of moves, you don't have to do it again
@@ -277,3 +272,12 @@ hashmap solution that is O(N) time and O(N) memory
 
 2025/05/21
 - I've found a simple solution that could be straightforwardly answered in time, and is clear. Now I have to make sure its in my mind :)
+
+
+#### l_0208_implement_prefix_tree
+2025/04/26
+- didn't think to use a sentinel, simplify all this
+- I wasn't very smooth in the implementation
+
+2025/04/27
+- better, bunch of typos today
