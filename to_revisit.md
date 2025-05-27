@@ -97,6 +97,10 @@
 2025/04/26
 - got the bit at the start wrong, and its mainly because I wasn't brining the correct focus to the problem. Need to do better I think
 
+#### l_0017_letter_combinations_of_a_phone_number
+2025/04/27
+- I mostly got this right, but messed up thinking about the implementation, dived right in
+
 ----------------
 
 ### To revisit - coding details
