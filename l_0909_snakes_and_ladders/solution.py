@@ -6,7 +6,7 @@ class Solution:
     def snakesAndLadders(self, board: List[List[int]]) -> int:
 
         # linearise board
-        linear_board: list[int] = []
+        linear_board: List[int] = []
         reverse_toggle: bool = False
 
         for row in board[::-1]:
@@ -21,19 +21,21 @@ class Solution:
 
         while queue:
             moves, pos = queue.popleft()
-
-            furthest_ordinary: int | None = None
+            
+            furthest_ordinary: int = 0
             for step in range(pos+1, pos+7):
                 if step in visited:
                     continue
                 visited.add(step)
-                if step == len(linear_board) - 1 or linear_board[step] == len(linear_board) - 1:
+
+                dest: int = linear_board[step]
+                if dest == len(linear_board) - 1 or step == len(linear_board) - 1:
                     return moves + 1
-                if linear_board[step] == -1:
+                if dest == -1:
                     furthest_ordinary = step
                 else:
-                    queue.append((moves+1, linear_board[step]))
-            if furthest_ordinary is not None:
+                    queue.append((moves+1, dest))
+            if furthest_ordinary:
                 queue.append((moves+1, furthest_ordinary))
 
         return -1
