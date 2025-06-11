@@ -90,19 +90,23 @@
 ### To revisit - conceptual
 
 #### l_0017_letter_combinations_of_a_phone_number
-2025/04/27
+2025/05/27
 - I mostly got this right, but messed up thinking about the implementation, dived right in
 
 #### l_0909_snakes_and_ladders
-2025/04/22
+2025/05/22
 - this is a bfs solution to do optimally - I think you need to think about it in terms of what you're trying to minimise, the number of moves, and always process the fewest. Therefore, if you've enqueued a position in the same or fewer number of moves, you don't have to do it again
 - a way to do this in bfs is to store a map of pos: moves, and if you're in a pos in more moves, skip it
 
-2025/04/26
+2025/05/26
 - got the bit at the start wrong, and its mainly because I wasn't brining the correct focus to the problem. Need to do better I think
 
-2025/04/28
+2025/05/28
 - issues in the bit at the beginning, different from above. I need to practice gently bringing my attention to code tbh
+
+#### l_maximum_subarray
+2025/06/11
+- missed the simple solution (very similar to the rain problem, except simpler). Ah well.
 
 
 ----------------
@@ -283,9 +287,9 @@ hashmap solution that is O(N) time and O(N) memory
 
 
 #### l_0208_implement_prefix_tree
-2025/04/26
+2025/05/26
 - didn't think to use a sentinel, simplify all this
 - I wasn't very smooth in the implementation
 
-2025/04/27
+2025/05/27
 - better, bunch of typos today
