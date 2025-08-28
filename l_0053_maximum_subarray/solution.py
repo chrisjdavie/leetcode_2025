@@ -1,3 +1,7 @@
+"""
+Taken from an example solution
+"""
+
 from typing import List
 
 
