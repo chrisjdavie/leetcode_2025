@@ -109,6 +109,12 @@
 
 #### l_0074_search_a_2d_matrix
 
+2025/09/08
+mostly got it right, but
+
+- got the gt/lt the wrong way round (grrrr)
+- didn't consider that the start and end indicies being the same is a valid solution
+
 2025/09/03
 mostly got this right, but
 
