@@ -107,20 +107,6 @@
 
 ### To revisit - conceptual
 
-#### l_0074_search_a_2d_matrix
-
-2025/09/08
-mostly got it right, but
-
-- got the gt/lt the wrong way round (grrrr)
-- didn't consider that the start and end indicies being the same is a valid solution
-
-2025/09/03
-mostly got this right, but
-
-- got the gt/lt the wrong way around (grrrr)
-- didn't consider the bounds well enough
-
 #### l_0017_letter_combinations_of_a_phone_number
 
 2025/05/27
@@ -147,6 +133,23 @@ mostly got this right, but
 2025/06/11
 
 - missed the simple solution (very similar to the rain problem, except simpler). Ah well.
+
+#### l_0074_search_a_2d_matrix
+
+2025/09/09
+Got it right first time, putting it here to make sure I revisit
+
+2025/09/08
+mostly got it right, but
+
+- got the gt/lt the wrong way round (grrrr)
+- didn't consider that the start and end indicies being the same is a valid solution
+
+2025/09/03
+mostly got this right, but
+
+- got the gt/lt the wrong way around (grrrr)
+- didn't consider the bounds well enough
 
 ---
 
