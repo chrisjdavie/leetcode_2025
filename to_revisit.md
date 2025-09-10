@@ -103,15 +103,15 @@
 
 - solved it, buuuut, made a real mess of the tests, did not read or think about the code. Not going to hit myself for that, but it's worth being aware of if I do it more than once
 
----
-
-### To revisit - conceptual
-
 #### l_0017_letter_combinations_of_a_phone_number
 
 2025/05/27
 
 - I mostly got this right, but messed up thinking about the implementation, dived right in
+
+---
+
+### To revisit - conceptual
 
 #### l_0909_snakes_and_ladders
 

@@ -1,7 +1,6 @@
 from typing import List
 
-
-DIGIT_LETTER_MAP: dict[str, str] = {
+DIGITS_LETTERS_MAP: dict[int,str] = {
     "2": "abc",
     "3": "def",
     "4": "ghi",
@@ -9,9 +8,8 @@ DIGIT_LETTER_MAP: dict[str, str] = {
     "6": "mno",
     "7": "pqrs",
     "8": "tuv",
-    "9": "wxyz",
+    "9": "wxyz",    
 }
-
 
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
@@ -19,12 +17,10 @@ class Solution:
             return []
 
         combs: List[str] = [""]
-
         for d in digits:
             new_combs: List[str] = []
             for c in combs:
-                for l in DIGIT_LETTER_MAP[d]:
-                    new_combs.append(c + l)
+                new_combs.extend(c + l for l in DIGITS_LETTERS_MAP[d])
             combs = new_combs
 
         return combs
